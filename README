@@ -5,4 +5,4 @@ Clicking on the Alien causes the tab to display the "Reddit Toolbar Version" of 
 From here the user can submit the link (if it doesn't exist) or vote (if it has already been submitted).
 
 Reddit Jumpbar does not manage any user state.
-User credientials are handled by the browser and the user in the usual way.
+User credientials are handled by the browser and the user; Reddit Jumpbar has no knowledge of the users credentials.
