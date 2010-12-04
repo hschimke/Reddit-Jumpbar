@@ -1,0 +1,8 @@
+﻿Reddit Jumpbar is a simple Google Chrome Extension to make sharing and voteing on links easier.
+
+A small Reddit Alien is displayed in the far right of the Omni Bar.
+Clicking on the Alien causes the tab to display the "Reddit Toolbar Version" of the current page.
+From here the user can submit the link (if it doesn't exist) or vote (if it has already been submitted).
+
+Reddit Jumpbar does not manage any user state.
+User credientials are handled by the browser and the user in the usual way.
