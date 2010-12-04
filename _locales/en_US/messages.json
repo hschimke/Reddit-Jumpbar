@@ -1,0 +1,14 @@
+﻿{
+    "extName": {
+        "message": "Reddit Jumpbar",
+        "description": "The name of the extension"
+    },
+    "extension_description": {
+        "message": "Jump to the Reddit Toolbar version of any page",
+        "description": "What the extension does"
+    },
+    "pa_tooltip": {
+        "message": "Open Toolbar",
+        "description": "Tooltip for the page action icon"
+    }
+}

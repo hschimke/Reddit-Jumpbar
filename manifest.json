@@ -1,0 +1,19 @@
+﻿{
+    "name": "__MSG_extName__",
+    "version": "1.0.1.21",
+    "description": "__MSG_extension_description__",
+    "default_locale": "en_US",
+    "icons": {
+        "16": "assets/images/reddit-alien-jumping-16.png",
+        "48": "assets/images/reddit-alien-jumping-48.png",
+        "128": "assets/images/reddit-alien-jumping-128.png"
+    },
+	"permissions": [
+		"tabs"
+	],
+	"background_page": "background.html",
+	"page_action": {
+		"default_icon": "assets/images/reddit-alien-tight-19.png",
+		"default_title": "__MSG_pa_tooltip__"
+	}
+}
