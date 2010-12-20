@@ -12,6 +12,7 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 	if (
 		(tab.url.indexOf('www.reddit.com') == -1)
 		&& (tab.url.indexOf('reddit.com') == -1)
+        && (tab.url.indexOf('redd.it') == -1)
 		&& (tab.url.indexOf('chrome://') == -1) ) {
 			// ... show the page action.
 			chrome.pageAction.show(tabId);
@@ -19,7 +20,7 @@ function checkForValidUrl(tabId, changeInfo, tab) {
 };
 
 function jumpToRedditUrl( tab ) {
-	chrome.tabs.update(tab.id, {"url":"http://reddit.com/" + tab.url});
+	chrome.tabs.update(tab.id, {"url":"http://redd.it/" + tab.url});
 };
 
 // Listen for any changes to the URL of any tab.
