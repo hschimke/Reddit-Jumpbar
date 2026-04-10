@@ -1,3 +1,5 @@
+// Disable the action on Reddit pages — submitting a reddit.com URL to Reddit
+// isn't useful. Enable it everywhere else.
 function updateActionState(tabId, url) {
     const isReddit = url && (
         url.includes('reddit.com') ||
@@ -22,6 +24,8 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 // Must re-evaluate because onUpdated doesn't fire on tab switch.
 chrome.tabs.onActivated.addListener(({ tabId }) => {
     chrome.tabs.get(tabId, (tab) => {
-        updateActionState(tabId, tab.url);
+        if (tab) {
+            updateActionState(tabId, tab.url);
+        }
     });
 });
