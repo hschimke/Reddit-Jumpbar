@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    chrome.tabs.query({ active: true, currentWindow: true }, ([tab]) => {
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+        if (!tabs || tabs.length === 0) return;
+        const tab = tabs[0];
         const encodedUrl = encodeURIComponent(tab.url);
 
         document.getElementById('submit').addEventListener('click', () => {
