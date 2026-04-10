@@ -14,7 +14,11 @@
         "service_worker": "background.js"
     },
     "action": {
-        "default_icon": "assets/images/reddit-alien-tight-19.png",
+        "default_icon": {
+            "16": "assets/images/reddit-alien-jumping-16.png",
+            "48": "assets/images/reddit-alien-jumping-48.png",
+            "128": "assets/images/reddit-alien-jumping-128.png"
+        },
         "default_title": "__MSG_pa_tooltip__",
         "default_popup": "popup.html"
     }
