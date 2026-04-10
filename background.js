@@ -24,6 +24,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
 // Must re-evaluate because onUpdated doesn't fire on tab switch.
 chrome.tabs.onActivated.addListener(({ tabId }) => {
     chrome.tabs.get(tabId, (tab) => {
+        void chrome.runtime.lastError; // suppress "No tab with id" when tab is already closed
         if (tab) {
             updateActionState(tabId, tab.url);
         }
